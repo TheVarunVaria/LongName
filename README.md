@@ -21,7 +21,11 @@ Returns a DataFrame with additional LongName column
 #### Returns:
 <li> df : DataFrame with new column inserted at (location of) column + 1 index</li> 
   
-This module is intended to be a reusable function
+
+This module is intended to be a reusable function as follows:
+
+<img src="IMG1.png" width="50%" />
+
 
 ### Currently the module supports following columns - 
 <li>Living Situation Option List</li>

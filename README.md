@@ -14,11 +14,11 @@ addLongName function will insert a column looking up its value from the data dic
 Returns a DataFrame with additional LongName column
 
 Parameters:
-o  df : DataFrame of interest
+<li> df : DataFrame of interest</li> 
 
-o  col: columnn whose long name is to be appended to the DataFrame
+<li> col: columnn whose long name is to be appended to the DataFrame</li> 
 Returns:
-o  df : DataFrame with new column inserted at (location of) column + 1 index
+<li> df : DataFrame with new column inserted at (location of) column + 1 index</li> 
   
 This module is intended to be a reusable function
 

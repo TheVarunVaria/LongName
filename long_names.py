@@ -1,10 +1,13 @@
 def addLongNames(df,col):
 
-    """This function takes two arguments DataFrame and a column name from the DataFrame
-    and returns the DataFrame with corresponding long name of the column
+    """Returns a DataFrame with additional LongName column
 
-    If the column is not present in the DataFrame or Long name is not present,
-    the function returns the original DatFrame
+    Parameters:
+        df : DataFrame of interest
+        col: columnn whose long name is to be appended to the DataFrame
+
+    Returns:
+        df : DataFrame with new column inserted at (location of) column + 1 index
     """
     #Disability Type
     if(col == 'DisabilityType'):
@@ -17,6 +20,7 @@ def addLongNames(df,col):
 
     #Project Type
     elif (col == 'ProjectType'):
+        # Create the dictionary
         event_dictionary = {
             1  : 'Emergency Shelter',
             2  : 'Transitional Housing',
@@ -35,6 +39,7 @@ def addLongNames(df,col):
 
     #HousingType
     elif (col == 'HousingType'):
+        # Create the dictionary
         event_dictionary = {
             1 : 'Site-based – single site',
             2 : 'Site-based – clustered / multiple sites' ,
@@ -43,6 +48,7 @@ def addLongNames(df,col):
 
     #HouseholdType
     elif (col == 'HouseholdType'):
+        # Create the dictionary
         event_dictionary = {
             1 : 'Households without children',
             3 : 'Households with at least one adult and one child',
@@ -51,6 +57,7 @@ def addLongNames(df,col):
 
     #GeographyType
     elif (col == 'GeographyType'):
+        # Create the dictionary
         event_dictionary = {
             1  : 'Urban',
             2  : 'Suburban',
@@ -60,6 +67,7 @@ def addLongNames(df,col):
 
     #Ethnicity
     elif (col == 'Ethnicity'):
+        # Create the dictionary
         event_dictionary = {
             0  : 'Non-Hispanic/Non-Latino',
             1  : 'Hispanic/Latino',
@@ -70,6 +78,7 @@ def addLongNames(df,col):
 
     #LengthOfStay
     elif (col == 'LengthOfStay'):
+        # Create the dictionary
         event_dictionary = {
             2  : 'One week or more, but less than one month',
             3  : 'One month or more, but less than 90 days',
@@ -84,6 +93,7 @@ def addLongNames(df,col):
 
     #MonthsHomelessPastThreeYears
     elif (col == 'MonthsHomelessPastThreeYears'):
+        # Create the dictionary
         event_dictionary = {
             8   : 'Client doesn’t know',
             9   : 'Client refused',
@@ -105,6 +115,7 @@ def addLongNames(df,col):
 
     #Gender
     elif (col == 'Gender'):
+        # Create the dictionary
         event_dictionary = {
             0  : 'Female',
             1  : 'Male',
@@ -118,6 +129,7 @@ def addLongNames(df,col):
 
     #TimesHomelessPastThreeYears
     elif (col == 'TimesHomelessPastThreeYears'):
+        # Create the dictionary
         event_dictionary = {
             1  : 'One time',
             2  : 'Two times',
@@ -130,6 +142,7 @@ def addLongNames(df,col):
 
     #LivingSituation
     elif (col == 'LivingSituation' || col == 'Destination'):
+        # Create the dictionary
         event_dictionary = {
             16 : 'Place not meant for habitation',
             1  : 'Emergency shelter',

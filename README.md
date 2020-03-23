@@ -15,6 +15,7 @@ Returns a DataFrame with additional LongName column
 
 Parameters:
 o  df : DataFrame of interest
+
 o  col: columnn whose long name is to be appended to the DataFrame
 Returns:
 o  df : DataFrame with new column inserted at (location of) column + 1 index

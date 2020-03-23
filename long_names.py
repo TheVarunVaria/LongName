@@ -1,11 +1,11 @@
 def addLongNames(df,col):
 
-    '''This function takes two arguments DataFrame and a column name from the DataFrame
+    """This function takes two arguments DataFrame and a column name from the DataFrame
     and returns the DataFrame with corresponding long name of the column
 
     If the column is not present in the DataFrame or Long name is not present,
     the function returns the original DatFrame
-    '''
+    """
     #Disability Type
     if(col == 'DisabilityType'):
         # Create the dictionary
@@ -129,7 +129,7 @@ def addLongNames(df,col):
         }
 
     #LivingSituation
-    elif (col == 'LivingSituation'):
+    elif (col == 'LivingSituation' || col == 'Destination'):
         event_dictionary = {
             16 : 'Place not meant for habitation',
             1  : 'Emergency shelter',

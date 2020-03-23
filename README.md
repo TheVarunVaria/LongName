@@ -1,7 +1,25 @@
 # LongName
 A module to convert codes to long names from the HMIS dataset
 
-This module can used to insert a column to the dataframe telling more about the column
+HMIS Datasets often contain a lot of column that are encoded using identifiers. To understand the meaning of a particular value, one has to look it up in the HMIS data dictionary.
+For example, Enrollment.csv contains a column called 'Length of Stay' which takes nine possible values as follows:
+
+<img src="IMG1.png" width="50%" />
+
+
+With multiple columns being encoded with some of them taking 35+ possible values, it is difficult to remember what each value represents.
+
+addLongName function will insert a column looking up its value from the data dictionary and insert it next to the column you passed.
+
+Returns a DataFrame with additional LongName column
+
+Parameters:
+  df : DataFrame of interest
+  col: columnn whose long name is to be appended to the DataFrame
+Returns:
+  df : DataFrame with new column inserted at (location of) column + 1 index
+  
+This module is intended to be a reusable function
 
 Currently the module supports following columns - 
 <li>Living Situation Option List</li>

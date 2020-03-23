@@ -24,7 +24,7 @@ Returns a DataFrame with additional LongName column
 
 This module is intended to be a reusable function as follows:
 
-<img src="IMG1.png" width="50%" />
+<img src="IMG2.png" width="50%" />
 
 
 ### Currently the module supports following columns - 

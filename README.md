@@ -1,5 +1,5 @@
 # LongName
-A module to convert codes to long names from the HMIS dataset
+This module can be used to convert codes to long names from the HMIS dataset
 
 ### What is HMIS?
 HMIS (Homeless Management Information System) is software application that records all housing services provided to individuals and families seeking federally funded homelessness assistance. HMIS stores client-level data and data on the provision of housing and services to homeless individuals and families and persons at risk of homelessness and must comply with the U.S. Department of Housing and Urban Development (HUD) data collection, management, and reporting standards.

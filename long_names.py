@@ -141,7 +141,7 @@ def addLongNames(df,col):
         }
 
     #LivingSituation
-    elif (col == 'LivingSituation' || col == 'Destination'):
+    elif (col in ['LivingSituation', 'Destination']):
         # Create the dictionary
         event_dictionary = {
             16 : 'Place not meant for habitation',

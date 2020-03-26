@@ -27,7 +27,7 @@ Returns a DataFrame with additional LongName column
 
 You can invoke the function by importing the file and calling the function as showing in the image below
 
-<img src="IMG2.png" width="50%" />
+<img src="IMG3.png" width="50%" />
 
 
 ### Currently the module supports following columns - 

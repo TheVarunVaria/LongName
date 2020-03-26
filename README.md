@@ -11,6 +11,8 @@ For example, Enrollment.csv contains a column called 'Length of Stay' which take
 <img src="IMG1.png" width="50%" />
 
 
+
+### addLongName function
 With multiple columns being encoded with some of them taking 35+ possible values, it is difficult to remember what each value represents.`addLongName` function will insert a column looking up its value from the data dictionary and insert it next to the column you passed.
 Returns a DataFrame with additional LongName column
 
